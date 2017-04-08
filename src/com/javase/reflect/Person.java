@@ -3,6 +3,7 @@ package com.javase.reflect;
 public class Person {
 	private String name;
 	private int age;
+	private Integer age;
 	public String getName() {
 		return name;
 	}
