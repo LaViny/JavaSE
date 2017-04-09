@@ -1,10 +1,7 @@
 package com.javase.reflect;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -13,10 +10,12 @@ import org.junit.Test;
 
 public class ClassInform {
 	/**
-	 * 1.关于Class类，是对象照镜子后得到的信息： 某个类的数据成员，方法构造器，实现了哪些接口，继承了哪个父类。 Class对象又系统创建，
+	 * 1.关于Class类，是对象照镜子后得到的信息： 某个类的数据成员，方法构造器，实现了哪些接口，继承了哪个父类。
+	 * Class对象由系统创建，
 	 * 一个类在jvm中只有一个class实例。
-	 * @throws ClassNotFoundException 
-	 */	
+	 * 
+	 * @throws ClassNotFoundException
+	 */
 	@Test
 	public void testClass() throws ClassNotFoundException {
 		Class clazz = null;
