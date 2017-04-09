@@ -37,18 +37,18 @@ public class IOBase {
 	 */
 	@Test
 	public void testFileClass() throws IOException{
-		File dir = new File("/Users/LaVine/Documents/test1");
+		File dir = new File("/Users/xxx/Documents/test1");
 		if (dir.exists()) {
 			dir.delete();
 		}
-		File dir1 = new File("/Users/LaVine/Documents/testFile");
+		File dir1 = new File("/Users/xxx/Documents/testFile");
 		dir1.mkdir();
 
-		File file = new File("/Users/LaVine/Documents/test2");
+		File file = new File("/Users/xxx/Documents/test2");
 		if (file.exists()) {
 			file.delete();
 		}
-		File file1 = new File("/Users/LaVine/Documents/testFile/test.doc");
+		File file1 = new File("/Users/xxx/Documents/testFile/test.doc");
 		file1.createNewFile();
 		System.out.println(file1.getName());//test1.doc
 		file.getPath();//file path
